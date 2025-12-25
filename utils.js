@@ -4,7 +4,7 @@ import { readJsonFile } from "./generalFunctions.js"
 
 
 
-const createUser= async(user)=>{
+export const createUser= async(user)=>{
     try {
         const arryOfUsers=await readJsonFile("./users")
         if(arryOfUsers.length===0){
