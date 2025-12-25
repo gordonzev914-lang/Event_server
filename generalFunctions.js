@@ -1,8 +1,8 @@
 import fs from "fs/promises"
 
-export const writingToJson=(Object,fileName)=>{
+export const writingToJson= (Object,fileName)=>{
     try{
-        const objectToString=JSON.stringify(Object)
+        const objectToString= JSON.stringify(Object)
         fs.writeFile(`${fileName}.json`,objectToString ,'utf-8',(objectToString)=>{console.log(objectToString)})
                 return objectToString
             }
@@ -23,3 +23,4 @@ export const readJsonFile=async(path)=>{
 }//בעת קריאה לפונקציה יש להשתמש ב 
 // "await"
 
+// console.log(writingToJson([],"users"))
