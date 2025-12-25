@@ -23,4 +23,3 @@ export const readJsonFile=async(path)=>{
 }//בעת קריאה לפונקציה יש להשתמש ב 
 // "await"
 
-// console.log(writingToJson([],"users"))
